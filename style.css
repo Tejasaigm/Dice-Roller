@@ -1,0 +1,102 @@
+body{
+    background:linear-gradient(#F0F3FA,#8AAEE0,#B1C9EF,#8AAEE0);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400vh;
+    margin: 0;
+}
+.container{
+    background:linear-gradient(#eaeff8,#a2bce7);
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 100px;
+    box-shadow: rgba(5, 5, 8, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    width: 300px;
+    height: auto;
+    text-align: center;
+}
+input{
+    padding: 6px;
+    background-color:#F0F3FA ;
+    margin-bottom: 3em;
+    border-radius: 3px;
+    outline: none;
+}
+button{
+    padding: 6px 20px;
+    background-color: #88b1f1;
+    border-radius: 5px;
+    border: 1px solid #4871b4;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: background-color 0.5s;
+}
+button:hover{
+    background-color: #4871b4;
+}
+button:active{
+    background-color: #315a9c;
+}
+h1{
+    color: #395886;
+    font-size: 1.7em;
+}
+#diceImages img{
+    width: 80px;
+    height: 80px;
+    margin: 15px;
+    filter: grayscale(100%);
+}
+#diceImages img:hover{
+    filter: grayscale(0%);
+}
+.diceContainer{
+    padding: auto;
+    width: auto;
+    border: 1px solid #6185c0;
+    background-color: rgba(255, 255, 255, 0.473);
+    position: absolute;
+    top: 500px;
+    margin: 10px 100px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    height: auto;
+}
+@media  screen and (max-width:500px) {
+    .diceContainer{
+        margin: 8px;
+    }
+    #diceImages img{
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+    }
+    .container{
+        margin: 50px;
+    }
+}
+@media screen and (max-width:300px){
+    .container{
+        width: 150px;
+        height: auto;
+        margin: 40px;
+        font-size: 0.7em;
+    }
+    #diceImages img{
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+    }
+    input{
+        padding: 3px;
+        width: 80px;
+    }
+    button{
+        padding: 3px 10px;
+        font-size: 1em;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+}
